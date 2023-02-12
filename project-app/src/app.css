@@ -1,0 +1,267 @@
+:root {
+    --main-dark-color: #272727;
+    --details-color: rgb(60, 204, 122);
+    --menu-color: rgb(207, 223, 222);
+    --logo-color: rgb(207, 223, 222);
+    --main-background-color: #EFF1F3;
+    --second-details-color: rgb(32, 133, 76);
+    --menu-hover-color: rgba(96, 182, 228, 0.852);
+    --main-font: 'Open Sans', sans-serif;
+    --main-font-size: 90%;
+  }
+  
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-background-color);
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
+}
+
+/*Header styles///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.App-header {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    background-color: var(--main-dark-color);
+    padding-left: 0%;
+    padding-right: 0%;
+    font-size: 120%;
+} 
+
+.Header-upper-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-height: 50px;
+}
+
+.Header-logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 20%; 
+    text-align: center;
+}
+
+.Header-logo-text {
+    font-size: 100%;
+    color: var(--logo-color);   
+    font-style: italic;
+}
+
+.Header-contacts-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    align-items: center;
+    font-style: italic;
+}
+
+.Header-language-buttons-container {
+    display: flex;
+    width: 10%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Nav-menu-all-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Nav-menu-all-items :hover {
+    color: var(--details-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*Callback styles///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+ 
+.Callback-button {
+    border: none;
+    background-color: var(--main-dark-color);
+    font-family: var(--main-font);
+}
+  
+.Callback-button, .Header-contacts, .Footer-text {
+    color: var(--details-color);
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.Callback-button-container :hover {
+    color: var(--main-background-color);
+    cursor: pointer;
+}
+
+.Header-contacts :hover {
+    color: var(--menu-color);
+}
+
+.Nav-menu-item {
+    color: var(--menu-color);
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.ServiceList-button {
+    background-color: var(--main-dark-color);
+    border: none;
+    color: var(--menu-color);
+}
+
+.ServiceList-container {
+    width: min-content;;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.Callback-container {
+    background-color: var(--second-details-color);
+    padding: 2%;
+    text-align: center;
+    width: 40%;
+
+}
+
+.Callback-inner-button {
+    padding: 2%;
+    font-size: large;
+}
+
+.Callback-inner-button-container {
+    text-align: right;
+}
+
+.Callback-textfield {
+   display: block;
+   font-size: 120%;
+   padding: 5%;
+   margin: 2% 0;
+}
+
+.Callback-textfield-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4%;
+}
+
+.Callback-text {
+    font-size: 120%;
+}
+
+.Callback-submit-button {
+    display: flex;
+    align-items: center;
+    margin: 0 40%;
+}
+
+/*Footer styles/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.App-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--main-dark-color);
+    font-size: 100%;
+    bottom: 0; 
+    width: 100%;
+} 
+
+.Privacy-policy-container {
+    white-space: pre-wrap;
+    text-align: justify;
+    padding: 3% 5%;
+    margin: 10%;
+}
+
+.Copyright-text {
+    font-style: italic;
+}
+
+.Address-text {
+    font-style: italic;
+}
+
+/* @media(max-width: 420px) {
+    .Header-upper-container {
+        flex-direction: column;
+    }
+} */
+
+/*Contacts Styles/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.Contacts-container {
+    margin-top: 11%;
+    text-align: center;
+    margin-bottom: 2%;
+    /* padding: 5%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.Contacts-container-heading {
+    text-align: center;
+    font-style: italic;
+}
+
+.Contacts-adress-container {
+    max-width: 47%;
+    text-align: justify;
+    font-style: italic
+}
+
+.Contacts-feedback-form-container {
+    background-color: var(--details-color);
+    min-width: 47%;
+    font-size: 120%;
+    padding-bottom: 3%;
+}
+
+.Contacts-feedback-form-input, .Contacts-feedback-form-text-input {
+    margin-bottom: 3%;
+    font-size: large;
+    padding: 3%;
+}
+
+.Contacts-feedback-form-input {
+   min-width: 42%;
+}
+
+.Contacts-feedback-form-text-input {
+    align-items: stretch;
+    height: 100px;
+}
+
+.Contacts-feedback-form-input-container {
+    margin: 0  7%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+     
+}
+
+.Contacts-feedback-form-input-container-without-text-form-input {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Contacts-feedback-form-button {
+    font-family: var(--main-font);
+    padding: 2%;
+}
+
+/*End of Contact styles/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
